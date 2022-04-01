@@ -104,6 +104,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
 
+Cette architecture hexagonale à pour principe de découpler le coeur "métier" du produit de la partie technique (DAO, API, etc.). Le but principale est d'isolé la partie métier afin que l'application puisse évoluer techniquement sans que le métier sois impacté et modifier la partie métier sans impacté la partie technique de l'application.
+
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
 * prend un `TodoItem` au format JSON dans le body (voir exemple de contenu plus haut);
@@ -120,7 +122,11 @@ _Temps estimé : 20 mins_
 
 *Quels types de tests devra-t-on écrire pour les adapteurs ?* 
 
+Ici ce sera des tests d'intégrations.
+
 *Que teste-on dans ce cas ?*
+
+On prendra soin de vérifier la compatibilité entre les différentes briques.
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
