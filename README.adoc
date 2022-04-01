@@ -55,7 +55,7 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 
-Cette ligne permet de lancer le conteneur Docker contenant la BDD. Le mot ```run``` permet d'indiquer à Docker que l'on veut lancer un conteneur. L'option ```-it``` permet de visualiser les logs de la BDD directement dans le terminal ou l'on exécute la commande. L’option ```-e```quant à elle permet d'indiquer les variables d'environnement que l'on veut pousser dans le conteneur. On indique ensuite le mot de passe de la BDD puis avec l'option ```-p``` le port de diffusion côté Docker et le port de sortie sur l'extérieur. Ensuite on indique le nom de conteneur que l'on veut lancer, ici ```postgres```.
+Cette ligne permet de lancer le conteneur Docker contenant la BDD. Le mot `run` permet d'indiquer à Docker que l'on veut lancer un conteneur. L'option `-it` permet de visualiser les logs de la BDD directement dans le terminal ou l'on exécute la commande. L’option `-e`quant à elle permet d'indiquer les variables d'environnement que l'on veut pousser dans le conteneur. On indique ensuite le mot de passe de la BDD puis avec l'option `-p` le port de diffusion côté Docker et le port de sortie sur l'extérieur. Ensuite on indique le nom de conteneur que l'on veut lancer, ici `postgres`.
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
